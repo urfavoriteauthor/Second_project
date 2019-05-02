@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Tanya added Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <title>Project 2</title>
+    <link rel="shortcut icon" href="assets/images/icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--- Start Home Section -->
+    <div id="home">
+        <!--- Navigation -->
+        <div class="pos-f-t">
+            <div class="bg-dark p-4">
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#start">How this App works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#places">Other places to find me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="....">....</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+        <!--- Hero Header Image -->
+        <div class="header">
+            <div class="home-wrap">
+                <div class="home-inner">
+                </div>
+            </div>
+        </div>
+        <!--- End Header Image -->
+        <!--- App logo -->
+        <div class="caption center-block text-center">
+            <h3>Freelancing Devs</h3>
+            <a class="btn btn-outline-light" href="#start">Get Started</a>
+        </div>
+    </div>
+    <!--- End Home Section -->
+    <!-- MAIN SEARCH BOX SECTION-->
+    <div id="start" class="offset">
+        <div class="col-md-12">
+            <div class="heading-underline"></div>
+            <div class="start text-center">
+                <i class="fa fa-arrow-circle-down fa-3x"></i>
+                <h3>To Get Started</h3>
+                <p>.....</p>
+            </div>
+            <br>
+            <div class="heading-underline"></div>
+        </div>
+        <!-- End of Search heading and Search box section-->
+        <div class="container" style="background: transparent;">
+            <br>
+            <div id="resource-buttons"> </div>
+            <br>
+            <div class="container" id="btn" style="background: transparent;">
+                <form id="resource-form">
+                    <label id="add" for="resource-input">Find The Perfect Freelance IT Services For Your Business</label>
+                    <input type="text" class="form-control" id="resource-input">
+                    <br>
+                    <br>
+                </form>
+                <button onclick="submitButtonClicked()" type="button" id="add-resource" class="btn btn-success">Search</button>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Display Search Result Section -->
+
+                        <div class="heading-underline"></div>
+                        <div id="resource"> </div>
+
+                    </div>
+                    <!--script-->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+                        crossorigin="anonymous"></script>
+                    <script src="assets/javascript.js"></script>
+</body>
+
+<!--footer section-->
+<div class="container-fluid footer">
+    <!--copyright row-->
+    <div id="places" class="offset">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-copyright text-center py-3">
+                    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+                    <div>
+                        <a href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQHi1yX_lsJEpgAAAWnVoRbQEU_tqZB-Nwce6gAgn72Gd4RP1jslwZHHFQEqKqLNDQ6-Vc-MkwXLIT7sMevqKLo_qE3-y2hAc4PgW4WvccjogLqXlz_A8mtXrGR29olm3CXsXxI=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftodegova">
+                            <i class="fa fa-briefcase fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tanya____o/?hl=en">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://tanyaodegova.github.io/Bootstrap-Portfolio/portfolio.html">
+                            <i class="fa fa-github fa-2x"></i>
+                        </a>
+                        <hr> &copy; 2019
+                    </div>
+                </div>
+                <!--- End Row -->
+            </div>
+            <!--- End Container Footer -->
+        </div>
+
+</html>
