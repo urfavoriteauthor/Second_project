@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/urfavoriteauthor/Second_project#readme",
   "dependencies": {
+    "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
+    "mysql2": "^1.6.5",
     "sequelize": "^5.8.0"
   }
 }
