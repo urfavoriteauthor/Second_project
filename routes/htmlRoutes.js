@@ -6,7 +6,9 @@ module.exports = function(app) {
   });
 
   app.get('/jobs', function(req, res) {
-    res.render('jobs', {jobs: dbJobs});
+    db.Jobs.findAll({}).then(function(dbJobs){
+      res.render('jobs', {jobs: dbJobs});
+    })
   });
 
   app.get('/user/:id', function(req, res) {
@@ -17,7 +19,7 @@ module.exports = function(app) {
 
   app.get('/client/:id', function(req, res) {
     db.Clients.findOne({where: {id: req.params.id}}).then(function(dbClients) {
-      res.render('client', {client:dbClients});
+      res.render('client', {client: dbClients});
     });
   });
 
