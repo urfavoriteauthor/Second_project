@@ -6,7 +6,7 @@ module.exports = function(app) {
   });
 
   app.get('/jobs', function(req, res) {
-    res.render('jobs');
+    res.render('jobs', {jobs: dbJobs});
   });
 
   app.get('/user/:id', function(req, res) {
@@ -22,6 +22,8 @@ module.exports = function(app) {
   });
 
   app.get('*', function(req, res) {
-    res.render('404');
+    res.render('index', {
+      msg: '404 error'
+    });
   });
 }
