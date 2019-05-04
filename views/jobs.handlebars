@@ -1,9 +1,14 @@
 <h1>Jobs</h1>
 
 <ul>
-  {{#each Jobs}}
-  <li>Needs HTML: {{html}}</li>
-  <li>Needs CSS: {{css}}</li>
-  <li>Needs JavaScript: {{javascript}}</li>
+  {{#each jobs}}
+  <li>Job Description: {{this.job_description}}</li>
+  <li>Needs HTML: {{this.html}}</li>
+  <li>Needs CSS: {{this.css}}</li>
+  <li>Needs JavaScript: {{this.javascript}}</li>
+  <li>Job Accepted: {{this.job_accepted}}</li>
   {{/each}}
 </ul>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/public/js/index.js"></script>

@@ -7,5 +7,15 @@ module.exports = function(app) {
     });
   });
 
-  
+  app.post('/api/jobs', function(req, res) {
+    db.Jobs.create(req.body).then(function(dbJobs) {
+      res.json(dbJobs);
+    });
+  });
+
+  app.delete('/api/jobs', function(req, res) {
+    db.Jobs.destroy({where: {id: req.params.id}}).then(function(dbJobs) {
+      res.json(dbJobs);
+    });
+  });  
 }

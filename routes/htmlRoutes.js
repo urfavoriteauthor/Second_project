@@ -8,12 +8,24 @@ module.exports = function(app) {
   app.get('/jobs', function(req, res) {
     db.Jobs.findAll({}).then(function(dbJobs){
       res.render('jobs', {jobs: dbJobs});
-    })
+    });
+  });
+
+  app.get('/user', function(req, res) {
+    db.Users.findaAll({}).then(function(dbUsers) {
+      res.render('user', {user: dbUsers});
+    });
   });
 
   app.get('/user/:id', function(req, res) {
     db.Users.findOne({where: {id: req.params.id}}).then(function(dbUsers) {
       res.render('user', {user: dbUsers});
+    });
+  });
+
+  app.get('/client', function(req, res) {
+    db.Clients.findAll({}).then(function(dbClients) {
+      res.render('client', {client: dbClients});
     });
   });
 
