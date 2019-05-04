@@ -6,7 +6,15 @@ module.exports = function(app) {
   });
 
   app.get('/jobs', function(req, res) {
-    res.render('jobs');
+    db.Jobs.findAll({}).then(function(dbJobs){
+      res.render('jobs', {jobs: dbJobs});
+    });
+  });
+
+  app.get('/user', function(req, res) {
+    db.Users.findaAll({}).then(function(dbUsers) {
+      res.render('user', {user: dbUsers});
+    });
   });
 
   app.get('/user/:id', function(req, res) {
@@ -15,13 +23,21 @@ module.exports = function(app) {
     });
   });
 
+  app.get('/client', function(req, res) {
+    db.Clients.findAll({}).then(function(dbClients) {
+      res.render('client', {client: dbClients});
+    });
+  });
+
   app.get('/client/:id', function(req, res) {
     db.Clients.findOne({where: {id: req.params.id}}).then(function(dbClients) {
-      res.render('client', {client:dbClients});
+      res.render('client', {client: dbClients});
     });
   });
 
   app.get('*', function(req, res) {
-    res.render('404');
+    res.render('index', {
+      msg: '404 error'
+    });
   });
 }
