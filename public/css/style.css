@@ -80,5 +80,38 @@ body, html {
     text-align: center;
     background-position: center;
   }
-  
-  
+  /* How it works */
+#howItWorks{
+    background-color: rgb(249, 249, 249)
+}  
+.footer-navbar-wrapper {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    margin-top: auto;
+    background-color: #222;
+  }
+    .footer-navbar-wrapper a, .footer-navbar-wrapper p {
+      font-family: "Gotham SSm",Helvetica,Arial,sans-serif;
+      font-size: 14px;
+      color: #656565;
+    }
+    /* jobs page main content */
+ .air-card header, up-c-card header {
+    border-bottom: 1px solid #E0E0E0;
+ }
+ air-card header, .air-card footer, up-c-card header, up-c-card footer {
+  margin: 0 -30px;
+  padding: 30px;
+  background-color: #F9F9F9;
+ }
+ .air-card {
+  width: auto;
+  height: auto;
+  position: relative;
+  background-color: #fff;
+  margin: 125px 125px;
+  padding: 30px;
+  -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+  box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+ }
