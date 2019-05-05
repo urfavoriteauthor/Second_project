@@ -6,6 +6,12 @@ var $jobInfo = $('#job-info');
 var $clientInfo = $('#client-info');
 var $userInfo = $('#user-info');
 
+var $jobName = $('#jobName');
+var $jobDescription = $('#jobDescription');
+var $htmlNeeded = $('#htmlNeeded');
+var $cssNeeded = $('#cssNeeded');
+var $jsNeeded = $('#jsNeeded');
+
 var jobAPI = {
   newJob: function(jobs) {
     $.ajax({
