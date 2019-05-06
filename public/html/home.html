@@ -60,38 +60,44 @@
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
+
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Log in and get to work</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
+                    <!-- Form for log In -->
                     <div class="modal-body" id="modalBody">
-                        <!-- Form for log In -->
                         <form>
                             <div class="form-group">
                                 <input type="email" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" placeholder="Username or Email">
                             </div>
-
                             <button type="submit" class="btn btn-primary">Continue</button>
                         </form>
-                        <hr>
                     </div>
-                    <form>
-                        <div class="form-group">
-                            <p>New to Upwork?</p>
-                        </div>
 
-                        <button type="submit" class="btn btn-primary">Sign Up</button>
-                        <br>
-                    </form>
+
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New to work together?</h5>
+
+                    </div>
+                    <!-- Form for log In -->
+                    <div class="modal-body" id="modalBody">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Username or Email">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign up</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
-
-
-
     </header>
     <!-- After Navbar -->
     <div class="afterNavbar">
@@ -121,7 +127,10 @@
         </small>
     </div>
     <!-- Banner -->
-    <img src="../../assets/images/banner.png" class="img-fluid" alt="Responsive image">
+    <div class="text-center">
+            <img src="../../assets/images/banner.png" class="img-fluid" alt="Responsive image">
+
+    </div>
     <!-- Clients -->
     <div class="clients">
         <div class="container" id="categories">
@@ -148,54 +157,58 @@
         </div>
     </div>
     <!-- How it works -->
-    <div style="height: 150px;">
-        <div class="container" id="howItWorkd">
 
-        </div>
-        <div class="container">
-            <div class="row" id="hiDew">
-                <div class="col-sm">
-                    <h2> <strong>
-                            How it works
-                    </h2></strong>
+            <div class="container" style="height: 225px;">
+                    <div class="container" id="howItWorkd">
+                    </div>
+                    <div class="container" >
+                        <div class="row" id="hiDew">
+                            <div class="col-sm">
+                                <h2> <strong>
+                                        
+                                        <div class="mx-auto" style="width: 500px;">
+                                                How it works
+                                              </div>
+                                </h2></strong>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            
+            
+                <div class="container" style="height: 390px;">
+                    <div class="row">
+                        <div class="col-sm">
+                            <i class="fas fa-search"></i>
+                            <hr><br>
+                            <strong>FIND</strong>
+                            <p>Post a job to tell us about your project. We'll quickly match you with the right freelancers.</p>
+                        </div>
+                        <div class="col-sm">
+                            <i class="fas fa-window-restore"></i>
+                            <hr><br>
+                            <strong>HIRE</strong>
+                            <p>Browse profiles, reviews, and proposals then interview top candidates. Hire a favorite and begin your
+                                project.</p>
+                        </div>
+                        <div class="col-sm">
+                            <i class="fab fa-creative-commons-share"></i>
+                            <hr><br>
+                            <strong>WORK</strong>
+                            <p>Use the Upwork platform to chat, share files, and collaborate from your desktop or on the go.</p>
+                        </div>
+                        <div class="col-sm">
+                            <i class="fas fa-money-bill-wave-alt"></i>
+                            <hr><br>
+                            <strong>PAY</strong>
+                            <p> Invoicing and payments happen through Upwork. With Upwork Protection, only pay for work you
+                                authorize.</p>
+                        </div>
+                    </div>
+                </div>
 
-
-    <div class="container" style="height: 300px;">
-        <div class="row">
-            <div class="col-sm">
-                <i class="fas fa-search"></i>
-                <hr><br>
-                <strong>FIND</strong>
-                <p>Post a job to tell us about your project. We'll quickly match you with the right freelancers.</p>
-            </div>
-            <div class="col-sm">
-                <i class="fas fa-window-restore"></i>
-                <hr><br>
-                <strong>HIRE</strong>
-                <p>Browse profiles, reviews, and proposals then interview top candidates. Hire a favorite and begin your
-                    project.</p>
-            </div>
-            <div class="col-sm">
-                <i class="fab fa-creative-commons-share"></i>
-                <hr><br>
-                <strong>WORK</strong>
-                <p>Use the Upwork platform to chat, share files, and collaborate from your desktop or on the go.</p>
-            </div>
-            <div class="col-sm">
-                <i class="fas fa-money-bill-wave-alt"></i>
-                <hr><br>
-                <strong>PAY</strong>
-                <p> Invoicing and payments happen through Upwork. With Upwork Protection, only pay for work you
-                    authorize.</p>
-            </div>
-        </div>
-    </div>
+    
     <!-- Developers -->
-
     <div>
         <div class="container" style=" background-color: rgb(249, 249, 249)">
             <div class="container" style="height: 200px;">
@@ -212,10 +225,11 @@
                 <img src="../../assets/images/TanyaNew.png" class="mr-3" alt="...">
                 <div class="media-body">
                     <h5 class="mt-0">Tanya O. </h5>
-                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    
+                    <p class="text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
                         vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                    <a href="#" class="stretched-link">Go somewhere</a>
+                    <a href="#" class="stretched-link">View Profile</a>
                 </div>
             </div>
             <br>
@@ -225,10 +239,10 @@
                     alt="...">
                 <div class="media-body">
                     <h5 class="mt-0">Nygel P. </h5>
-                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    <p class="text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
                         vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                    <a href="#" class="stretched-link">Go somewhere</a>
+                    <a href="#" class="stretched-link">View Profile</a>
                 </div>
             </div>
             <br>
@@ -238,10 +252,10 @@
                 <img src="..." class="mr-3" alt="...">
                 <div class="media-body">
                     <h5 class="mt-0">Brittany F. </h5>
-                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    <p class="text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
                         vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                    <a href="#" class="stretched-link">Go somewhere</a>
+                    <a href="#" class="stretched-link">View Profile</a>
                 </div>
             </div>
             <br>
@@ -251,10 +265,10 @@
                 <img src="..." class="mr-3" alt="...">
                 <div class="media-body">
                     <h5 class="mt-0">Annabella W. </h5>
-                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    <p class="text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
                         vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                    <a href="#" class="stretched-link">Go somewhere</a>
+                    <a href="#" class="stretched-link">View Profile</a>
                 </div>
             </div>
             <br>
@@ -273,190 +287,196 @@
                         </div>
                     </div>
                 </div>
-                <main class="wrapper" role="main">
 
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
 
-                    <div class="col-md-12">
-                        <ul>
-                            <li>
-                                <h2>Full-Stack Javascript Developer (Node/React)</h2>
-                                <p class="description">We are looking for a remote US based full-stack Javascript
-                                    developer with experience using React, Node.JS,
-                                    Socket.io, and AWS.
-                                    <details>
-                                        <summary>Learn more</summary>
-                                        <p> You'll be adding exciting new features to our live chat and chatbot
-                                            platform (getgobot.com) and
-                                            expanding integrations with third-party platforms like Shopify and
-                                            Facebook. Experience with
-                                            Shopify and Facebook API's is a plus. You will be working directly with
-                                            both Co-Founders
-                                            and the CTO.
-                                        </p>
-                                    </details>
-                            </li>
-                            <li>
-                                <h2>Web Designer</h2>
-                                <p class="description">
-                                    Intersect Digital is looking for a professional Web Designer with experience in
-                                    content management systems to take over the
-                                    graphic and user interface design of clients' website. We're looking for a
-                                    candidate who has created
-                                    and maintained functional, attractive websites.
-                                    <details>
-                                        <summary>Learn more</summary>
-                                        <p> We want to talk to you if your portfolio includes clean, modern,
-                                            responsive websites with excellent
-                                            navigational structures and detailed linking. If you stay current with
-                                            the latest in web
-                                            design and development trends, you'd be a great fit for this position.
-                                            <p>Responsibilities:</p>
-                                            <ul>
-                                                <li>
-                                                    Create PSDs for visual layout of web pages and convert each
-                                                    design into HTML and CSS
-                                                </li>
-                                                <li>
-                                                    Meet with clients and internal team to determine the scope of a
-                                                    project
-                                                </li>
-                                                <li>
-                                                    Meet with clients and internal team to determine the scope of a
-                                                    project
-                                                </li>
-                                                <li>Advise clients on strategies to reach a target audience
-                                                <li>
-                                                    Determine the message the design should portray
-                                                </li>
-                                                <li>
-                                                    Create images that identify a product or convey a message
-                                                </li>
-                                                <li>
-                                                    Develop graphics for product illustrations, logos, and websites
-                                                </li>
-                                                <li>
-                                                    Develop a visual UI style guide and component library and help
-                                                    build a workflow for easily converting components from
-                                                    conception
-                                                    to design to code
-                                                </li>
-                                                <li>
-                                                    Present the design to clients and internal team </li>
-                                                <li>
-                                                    Incorporate changes recommended by the clients into the final
-                                                    design
-                                                </li>
-                                                <li>Create asset building template files for front-end developers or
-                                                    junior designers
-                                                    to use
-                                                </li>
-                                                <li>
-                                                    Implement and maintain high-quality UX best practices and
-                                                    incorporate them with content produced for the website - Create
-                                                    mock-ups for proposed project pages and update them as needed
-                                                </li>
+                            <h2>Full-Stack Javascript Developer (Node/React)</h2>
+                            <p class="description">We are looking for a remote US based full-stack Javascript
+                                developer with experience using React, Node.JS,
+                                Socket.io, and AWS.
+                                <details>
+                                    <summary>Learn more</summary>
+                                    <p> You'll be adding exciting new features to our live chat and chatbot
+                                        platform (getgobot.com) and
+                                        expanding integrations with third-party platforms like Shopify and
+                                        Facebook. Experience with
+                                        Shopify and Facebook API's is a plus. You will be working directly with
+                                        both Co-Founders
+                                        and the CTO.
+                                    </p>
+                                </details>
 
-                                            </ul>
-                                            <p>
-                                                Requirements:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Bachelor's in Computer Science, Graphic Design or related field,
-                                                    or 3+ years' additional experience.
-                                                </li>
-                                                <li>
-                                                    The ability to work with minimal supervision, while delivering
-                                                    meticulous designs;
-                                                </li>
-                                                <li>
-                                                    Advanced Photoshop and Illustrator skills.
-                                                </li>
-                                                <li>
-                                                    Strong vision for mobile Internet consumer products, clear
-                                                    understanding of usability, user-centered design, accessibility
-                                                    and web standards.
-                                                </li>
-                                                <li>
-                                                    Professional portfolio with at least 5 designs for internal
-                                                    review.
-                                                </li>
-                                                <li>
-                                                    Must be comfortable working in a quick paced organization.
-                                                </li>
-                                                <li>
-                                                    Applicants must be authorized to work in the United States
-                                                    without the need for a sponsor.
-                                                </li>
-                                            </ul>
-                                            <p>
-                                                Compensation:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    $150 per hour (fixed price)
-                                                </li>
-                                            </ul>
-                                        </p>
-                                        </summary>
-                                    </details>
-                            </li>
-                            <li>
-                                <h2>Front-end developer to assist on web app (HTML, CSS)</h2>
-                                <p class="description">
-                                    We are looking for a front-end developer to help us finish up a web application.
-                                    The application is developed in .net core,
-                                    and the client portion is a mix of custom javascript, Kendo UI controls, and
-                                    typescript.
-                                    <details>
-                                        <summary>Learn more</summary>
+                        </div>
+
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Web Designer</h2>
+                            <p class="description">
+                                Intersect Digital is looking for a professional Web Designer with experience in
+                                content management systems to take over the
+                                graphic and user interface design of clients' website. We're looking for a
+                                candidate who has created
+                                and maintained functional, attractive websites.
+                                <details>
+                                    <summary>Learn more</summary>
+                                    <p> We want to talk to you if your portfolio includes clean, modern,
+                                        responsive websites with excellent
+                                        navigational structures and detailed linking. If you stay current with
+                                        the latest in web
+                                        design and development trends, you'd be a great fit for this position.
+                                        <p>Responsibilities:</p>
+                                        <ul>
+                                            <li>
+                                                Create PSDs for visual layout of web pages and convert each
+                                                design into HTML and CSS
+                                            </li>
+                                            <li>
+                                                Meet with clients and internal team to determine the scope of a
+                                                project
+                                            </li>
+                                            <li>
+                                                Meet with clients and internal team to determine the scope of a
+                                                project
+                                            </li>
+                                            <li>Advise clients on strategies to reach a target audience
+                                            <li>
+                                                Determine the message the design should portray
+                                            </li>
+                                            <li>
+                                                Create images that identify a product or convey a message
+                                            </li>
+                                            <li>
+                                                Develop graphics for product illustrations, logos, and websites
+                                            </li>
+                                            <li>
+                                                Develop a visual UI style guide and component library and help
+                                                build a workflow for easily converting components from
+                                                conception
+                                                to design to code
+                                            </li>
+                                            <li>
+                                                Present the design to clients and internal team </li>
+                                            <li>
+                                                Incorporate changes recommended by the clients into the final
+                                                design
+                                            </li>
+                                            <li>Create asset building template files for front-end developers or
+                                                junior designers
+                                                to use
+                                            </li>
+                                            <li>
+                                                Implement and maintain high-quality UX best practices and
+                                                incorporate them with content produced for the website - Create
+                                                mock-ups for proposed project pages and update them as needed
+                                            </li>
+
+                                        </ul>
                                         <p>
-                                            You would work with our lead web developer to implement pages based on
-                                            existing templates and wire-frames. An example would
-                                            be vendor page, where a user can add/edit vendor's in the system. The
-                                            lead developer
-                                            would be available to help with any questions, as well as review any
-                                            code as necessary.
-                                        </p>
-                                        <p>
-                                            We are looking for someone we can send our mockups\wireframes and
-                                            existing CSS. We would expect a 48 hr turn around which
-                                            should include HTML file and any related CSS.
-                                        </p>
-                                        <p>
-                                            If successful, we will send you the remaining 14 pages we would like to
-                                            have created in this manner. So we know you read
-                                            the description and understand, please type "I'm available" in your
-                                            response.
-                                        </p>
-                                        <p>
-                                            You should be comfortable with the following technologies:
+                                            Requirements:
                                         </p>
                                         <ul>
                                             <li>
-                                                HTML
+                                                Bachelor's in Computer Science, Graphic Design or related field,
+                                                or 3+ years' additional experience.
                                             </li>
-                                            <li>CSS</li>
+                                            <li>
+                                                The ability to work with minimal supervision, while delivering
+                                                meticulous designs;
+                                            </li>
+                                            <li>
+                                                Advanced Photoshop and Illustrator skills.
+                                            </li>
+                                            <li>
+                                                Strong vision for mobile Internet consumer products, clear
+                                                understanding of usability, user-centered design, accessibility
+                                                and web standards.
+                                            </li>
+                                            <li>
+                                                Professional portfolio with at least 5 designs for internal
+                                                review.
+                                            </li>
+                                            <li>
+                                                Must be comfortable working in a quick paced organization.
+                                            </li>
+                                            <li>
+                                                Applicants must be authorized to work in the United States
+                                                without the need for a sponsor.
+                                            </li>
                                         </ul>
                                         <p>
-                                            We collaborate through slack and trello, and most items are clearly
-                                            spec'd out ready for someone to get started. The right
-                                            person can start as early as next week. We look forward to talking with
-                                            you.
+                                            Compensation:
                                         </p>
-                                    </details>
-
-                            </li>
-                        </ul>
+                                        <ul>
+                                            <li>
+                                                $150 per hour (fixed price)
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    </summary>
+                                </details>
+                                </li>
+                        </div>
                     </div>
-                </main>
+                    <br>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <h2>Front-end developer to assist on web app (HTML, CSS)</h2>
+                            <p class="description">
+                                We are looking for a front-end developer to help us finish up a web application.
+                                The application is developed in .net core,
+                                and the client portion is a mix of custom javascript, Kendo UI controls, and
+                                typescript.
+                                <details>
+                                    <summary>Learn more</summary>
+                                    <p>
+                                        You would work with our lead web developer to implement pages based on
+                                        existing templates and wire-frames. An example would
+                                        be vendor page, where a user can add/edit vendor's in the system. The
+                                        lead developer
+                                        would be available to help with any questions, as well as review any
+                                        code as necessary.
+                                    </p>
+                                    <p>
+                                        We are looking for someone we can send our mockups\wireframes and
+                                        existing CSS. We would expect a 48 hr turn around which
+                                        should include HTML file and any related CSS.
+                                    </p>
+                                    <p>
+                                        If successful, we will send you the remaining 14 pages we would like to
+                                        have created in this manner. So we know you read
+                                        the description and understand, please type "I'm available" in your
+                                        response.
+                                    </p>
+                                    <p>
+                                        You should be comfortable with the following technologies:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            HTML
+                                        </li>
+                                        <li>CSS</li>
+                                    </ul>
+                                    <p>
+                                        We collaborate through slack and trello, and most items are clearly
+                                        spec'd out ready for someone to get started. The right
+                                        person can start as early as next week. We look forward to talking with
+                                        you.
+                                    </p>
+                                </details>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-
-
-        <!-- Form -->
+        <!-- Form Sign UP -->
         <div class="container" style="height: 500px; 
                         margin-top: 75px; 
                         margin-bottom: 75px; 
