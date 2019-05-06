@@ -75,11 +75,11 @@ body, html {
     /* grid-template-columns: auto auto auto; */
     grid-gap: 10px; 
   }
-  .btn btn-primary{
-    align-content: center;
-    text-align: center;
-    background-position: center;
-  }
+  .btn-primary {
+    color:black;
+    background-color:transparent;
+    border-color: transparent;
+}
   /* How it works */
 #howItWorks{
     background-color: rgb(249, 249, 249)
@@ -116,5 +116,5 @@ body, html {
   box-shadow: 0 1px 6px rgba(57,73,76,0.35);
  }
  #modalBody{
-    margin: 25px 25px 25px 25px;
+    margin: 25px 25px 25px 45px;
  }
