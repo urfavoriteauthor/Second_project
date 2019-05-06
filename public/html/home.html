@@ -11,6 +11,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <!-- Fontawesome -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
         crossorigin="anonymous">
 
@@ -44,10 +45,10 @@
                         </li>
                         <!-- Button trigger modal -->
                         <li class="nav-item">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                    Log in
-                                </button>
-                            </li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Log in
+                            </button>
+                        </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -121,8 +122,28 @@
         </div>
         </small>
     </div>
+
+    <!--- Hero Header Image -->
+    <div class="header">
+        <div class="home-wrap">
+            <div class="home-inner">
+            </div>
+        </div>
+    </div>
+    <!--- End Header Image -->
     <!-- Banner -->
-    <img src="../../assets/images/banner copy.png" class="img-fluid" alt="Responsive image">
+    <div container>
+        <img src="../../assets/images/banner copy.png" class="img-fluid" alt="Responsive image">
+
+        <div class="caption center-block text-left">
+            <div class="row1">
+                <h3>Freelance-a-Lot</h3>
+            </div>
+            <div class="row2">
+                <a class="btn btn-outline-dark" href="#SignUp">Get Started</a>
+            </div>
+        </div>
+    </div>
     <!-- Clients -->
     <div class="clients">
         <div class="container" id="categories">
@@ -160,62 +181,53 @@
         <div class="container">
             <div class="row" id="hiDew">
                 <div class="col-sm">
-
                     <h2>
                         <strong>
                             How it works
+                        </strong>
                     </h2>
-                    </strong>
-
                 </div>
             </div>
-        </div>
-    </div>
-
-
-    <div class="container" style="height: 300px;">
-        <div class="row">
-            <div class="col-sm">
-                <i class="fas fa-search"></i>
-                <hr>
-                <br>
-                <strong>FIND</strong>
-                <p>Post a job to tell us about your project. We'll quickly match you with the right freelancers.</p>
-            </div>
-            <div class="col-sm">
-                <i class="fas fa-window-restore"></i>
-                <hr>
-                <br>
-                <strong>HIRE</strong>
-                <p>Browse profiles, reviews, and proposals then interview top candidates. Hire a favorite and begin your project.
-                </p>
-            </div>
-            <div class="col-sm">
-                <i class="fab fa-creative-commons-share"></i>
-                <hr>
-                <br>
-                <strong>WORK</strong>
-                <p>Use the Upwork platform to chat, share files, and collaborate from your desktop or on the go.</p>
-            </div>
-            <div class="col-sm">
-                <i class="fas fa-money-bill-wave-alt"></i>
-                <hr>
-                <br>
-                <strong>PAY</strong>
-                <p> Invoicing and payments happen through Upwork. With Upwork Protection, only pay for work you authorize.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- Developers -->
-
-    <div>
-        <div class="container" style=" background-color: rgb(249, 249, 249)">
-            <div class="container" style="height: 200px;">
-                <div class="row" id="hiDew">
+            <div class="container" style="height: 300px;">
+                <div class="row">
                     <div class="col-sm">
-                        <h2>
-                            <strong>
+                        <i class="fas fa-search"></i>
+                        <hr>
+                        <br>
+                        <strong>FIND</strong>
+                        <p>Post a job to tell us about your project. We'll quickly match you with the right freelancers.</p>
+                    </div>
+                    <div class="col-sm">
+                        <i class="fas fa-window-restore"></i>
+                        <hr>
+                        <br>
+                        <strong>HIRE</strong>
+                        <p>Browse profiles, reviews, and proposals then interview top candidates. Hire a favorite and begin
+                            your project.
+                        </p>
+                    </div>
+                    <div class="col-sm">
+                        <i class="fab fa-creative-commons-share"></i>
+                        <hr>
+                        <br>
+                        <strong>WORK</strong>
+                        <p>Use the Upwork platform to chat, share files, and collaborate from your desktop or on the go.</p>
+                    </div>
+                    <div class="col-sm">
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                        <hr>
+                        <br>
+                        <strong>PAY</strong>
+                        <p> Invoicing and payments happen through Upwork. With Upwork Protection, only pay for work you authorize.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Developers -->
+            <div class="containerdev" style=" background-color: rgb(249, 249, 249)">
+                <div class="row" id="hiDew">
+                    <div class="col-md">
+                        <strong><h2>
                                 Browse our highest-rated developers
                         </h2>
                         </strong>
@@ -227,7 +239,11 @@
                 <img src="../../assets/images/tanyaprofile.png" style="width: 15%; height: 200%; object-fit:cover;" class="mr-3" alt="tanyaodegova">
                 <div class="media-body">
                     <h5 class="mt-0">Tanya O. </h5>
-                    <p>A highly driven, organized, and efficient project manager has a proven track record of quality and timely project completions. Experienced in managing and a wide variety of positions on various teams throughout numerous projects / project types, Tanya Odegova is focused on the big picture milestones while continuous and actively participating in development, maintaining feedback and guidance, and pursuing open, appreciable, and gratifying client relationships.</p>
+                    <p>A highly driven, organized, and efficient project manager has a proven track record of quality and timely
+                        project completions. Experienced in managing and a wide variety of positions on various teams throughout
+                        numerous projects / project types, Tanya Odegova is focused on the big picture milestones while continuous
+                        and actively participating in development, maintaining feedback and guidance, and pursuing open,
+                        appreciable, and gratifying client relationships.</p>
                     <a href="https://tanyaodegova.github.io/tanyaoportfolio/" class="stretched-link">View Full Profile</a>
                 </div>
             </div>
@@ -237,7 +253,11 @@
                 <img src="../../assets/images/NygelNew.png" style="width:10%;height:200%;object-fit:cover;" class="mr-3" alt="nygel">
                 <div class="media-body">
                     <h5 class="mt-0">Nygel P. </h5>
-                    <p>I am a Front End and Back End Developer.  I enjoy taking complex problems and turning them into simple and beautiful code. I love structure and logic. I have been coding around 6 years now and I never stop learning – I love it. I want to share my knowledge with other upcoming or current developers. I am a current developer at the Digital Advertising Agency based in Charlotte, NC. Where I spend constant hours making the internet a better place.</p>
+                    <p>I am a Front End and Back End Developer. I enjoy taking complex problems and turning them into simple
+                        and beautiful code. I love structure and logic. I have been coding around 6 years now and I never
+                        stop learning – I love it. I want to share my knowledge with other upcoming or current developers.
+                        I am a current developer at the Digital Advertising Agency based in Charlotte, NC. Where I spend
+                        constant hours making the internet a better place.</p>
                     <a href="#" class="stretched-link">View Full Profile</a>
                 </div>
             </div>
@@ -245,10 +265,11 @@
             <hr>
 
             <div class="media position-relative">
-                <img src="../../assets/images/Britt.png"  style="width: 15%; height: 200%; object-fit:cover;" class="mr-3" alt="...">
+                <img src="../../assets/images/Britt.png" style="width: 15%; height: 200%; object-fit:cover;" class="mr-3" alt="...">
                 <div class="media-body">
                     <h5 class="mt-0">Brittany F. </h5>
-                    <p>I am a full stack web developer with almost 6 years experience designing, developing, and maintaining web applications on the cloud.</p>
+                    <p>I am a full stack web developer with almost 6 years experience designing, developing, and maintaining
+                        web applications on the cloud.</p>
                     <a href="#" class="stretched-link">View Full Profile</a>
                 </div>
             </div>
@@ -259,27 +280,28 @@
                 <img src="..." class="mr-3" alt="...">
                 <div class="media-body">
                     <h5 class="mt-0">Annabella W. </h5>
-                    <p>I'm a creative developer who can take your project idea from scratch and build out a beautiful and modern interface that gets results. Whatever the project, my goal is to leave your users with the best first impression possible.   As a designer, I am here to bring your ideas to life. My main focus is to create unique and expressive products that are easy-to-use and understand. My favorite tools for the job are Adobe XD, Photoshop, and Illustrator.</p>
+                    <p>I'm a creative developer who can take your project idea from scratch and build out a beautiful and modern
+                        interface that gets results. Whatever the project, my goal is to leave your users with the best first
+                        impression possible. As a designer, I am here to bring your ideas to life. My main focus is to create
+                        unique and expressive products that are easy-to-use and understand. My favorite tools for the job
+                        are Adobe XD, Photoshop, and Illustrator.</p>
                     <a href="#" class="stretched-link">View Full Profile</a>
                 </div>
             </div>
-            <br>
-            <hr>
         </div>
-
         <!-- JOb postings -->
         <div class="containerjobs">
             <div class="air-card">
                 <div class="container" style="height: 200px;">
                     <div class="row" id="hiDew">
                         <div id="NewJobs">
-                        <div class="col-sm">
-                            <h2>
-                                <strong>
-                                    Find New Jobs
-                            </h2>
-                            </strong>
-                        </div>
+                            <div class="col-sm">
+                                <h2>
+                                    <strong>
+                                        Find New Jobs
+                                </h2>
+                                </strong>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -448,10 +470,10 @@
                 <div class="col" style="margin-bottom: 75px; margin-top: 75px;">
                     <div id="SignUp">
                         <h3>
-                        <strong>
-                            <p class="text-center">Sign up for free project quotes</p>
-                        </strong>
-                    </h3>
+                            <strong>
+                                <p class="text-center">Sign up for free project quotes</p>
+                            </strong>
+                        </h3>
                     </div>
                 </div>
                 <div class="w-100"></div>

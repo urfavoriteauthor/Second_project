@@ -118,4 +118,80 @@ body, html {
  #modalBody{
     margin: 25px 25px 25px 45px;
  }
- /* profile imagees */
+ /* hero banner buttons and header text */
+
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 40%;
+	z-index: 1;
+}
+.caption h3 {
+	color: black;
+	font-size: 3em;
+	font-family: "Oswald", cursive;
+	text-transform: uppercase;
+  padding-bottom: 2rem;
+  z-index: -10;
+  margin-left: 30px;
+  marging-top: 20px;
+}
+.row1 {
+  margin-left: 20px;
+}
+.row2 {
+  padding-left: 5px;
+  margin-left: 50px;
+}
+/* info for Tanya's media queries for container's col and rows:
+XS equals less than  576px;
+SM equals between 576px and 768px;
+MD equals between 768px and 992 px;
+LG is between 992 px and 1200px;
+XL is above 1200px;
+*/
+
+@media (max-width: 768px) {
+	.caption {
+    top: 20%;
+    margin-left: 35px;
+	}
+	.caption h3 {
+		font-size: 20px;
+		font-family: "Oswald", cursive;
+		padding-bottom: 1.2rem;
+  }
+  .containerdev {
+    height: 500px;
+  }
+  .row {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 5px 5px;
+    padding: 10px;
+  }
+  .air-card {
+    width: auto;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+    margin: 5px 5px;
+    padding: 10px;
+}
+@media (min-width: 768px, max-width: 992px) {
+	.navbar {
+		height: auto;
+	}
+}
+@media (min-width: 992px, max-width: 1200px) {
+	.navbar {
+    height: 300px;
+    top: 35%
+    margin-left: 50px;
+  }
+  caption h3 {
+    margin-left: 30px;
+  }
+}
