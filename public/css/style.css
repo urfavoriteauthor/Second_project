@@ -115,3 +115,6 @@ body, html {
   -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
   box-shadow: 0 1px 6px rgba(57,73,76,0.35);
  }
+ #modalBody{
+    margin: 25px 25px 25px 25px;
+ }
