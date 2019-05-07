@@ -7,12 +7,11 @@ module.exports = function(sequelize, DataTypes) {
         len: [1, 400]
       }
     },
-    html: DataTypes.BOOLEAN,
-    css: DataTypes.BOOLEAN,
-    javascript: DataTypes.BOOLEAN,
-    job_accepted: {
-      type: DataTypes.BOOLEAN,
-      defaultValue: false
+    emailAddress: {
+      type: DataTypes.STRING,
+      validate: {
+        isEmail: true
+      }
     }
   });
   return Jobs;

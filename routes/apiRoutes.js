@@ -13,7 +13,7 @@ module.exports = function(app) {
     });
   });
 
-  app.delete('/api/jobs', function(req, res) {
+  app.delete('/api/jobs/:id', function(req, res) {
     db.Jobs.destroy({where: {id: req.params.id}}).then(function(dbJobs) {
       res.json(dbJobs);
     });
