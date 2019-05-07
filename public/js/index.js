@@ -1,12 +1,8 @@
-
-var $addJob = $('#addJob');
-
-var $jobName = $('#jobName');
-var $jobDescription = $('#jobDescription');
-var $emailAddress = $('#email');
-// var $htmlNeeded = $('#htmlNeeded');
-// var $cssNeeded = $('#cssNeeded');
-// var $jsNeeded = $('#jsNeeded');
+var $fullName = $('#full-name');
+var $jobName = $('#job-name');
+var $jobDescription = $('#job-description');
+var $email = $('#email');
+var $submit = $('#submit');
 
 var jobAPI = {
   newJob: function(jobs) {
@@ -48,6 +44,7 @@ $addJob.click(function(event) {
   event.preventDefault();
 
   var jobs = {
+    full_name: $fullName.val().trim(),
     job_name: $jobName.val().trim(),
     job_description: $jobDescription.val().trim(),
     emailAddress: $emailAddress.val().trim() 
