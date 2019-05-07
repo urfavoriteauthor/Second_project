@@ -1,38 +1,13 @@
 var db = require('../models');
+var path = require('path');
 
 module.exports = function(app) {
   app.get('/', function(req, res) {
-    res.render('index');
+    res.sendFile(path.join(__dirname, '../public/html/home.html'));
   });
 
   app.get('/jobs', function(req, res) {
-    db.Jobs.findAll({}).then(function(dbJobs){
-      res.render('jobs', {jobs: dbJobs});
-    });
-  });
-
-  app.get('/user', function(req, res) {
-    db.Users.findaAll({}).then(function(dbUsers) {
-      res.render('user', {user: dbUsers});
-    });
-  });
-
-  app.get('/user/:id', function(req, res) {
-    db.Users.findOne({where: {id: req.params.id}}).then(function(dbUsers) {
-      res.render('user', {user: dbUsers});
-    });
-  });
-
-  app.get('/client', function(req, res) {
-    db.Clients.findAll({}).then(function(dbClients) {
-      res.render('client', {client: dbClients});
-    });
-  });
-
-  app.get('/client/:id', function(req, res) {
-    db.Clients.findOne({where: {id: req.params.id}}).then(function(dbClients) {
-      res.render('client', {client: dbClients});
-    });
+    res.sendFile(path.join(__dirname, '../public/html/jobspage.html'));
   });
 
   app.get('*', function(req, res) {
