@@ -40,14 +40,14 @@ var jobAPI = {
   }
 }
 
-$addJob.click(function(event) {
+$submit.click(function(event) {
   event.preventDefault();
 
   var jobs = {
     full_name: $fullName.val().trim(),
     job_name: $jobName.val().trim(),
     job_description: $jobDescription.val().trim(),
-    emailAddress: $emailAddress.val().trim() 
+    emailAddress: $email.val().trim() 
   }
 
   console.log(jobs);
