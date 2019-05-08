@@ -11,8 +11,6 @@ module.exports = function(app) {
   });
 
   app.get('*', function(req, res) {
-    res.render('index', {
-      msg: '404 error'
-    });
+    res.sendFile(path.join(__dirname, '../public/html/error.html'));
   });
 }

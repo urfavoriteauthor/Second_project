@@ -3,6 +3,7 @@ var $jobName = $('#job-name');
 var $jobDescription = $('#job-description');
 var $email = $('#email');
 var $submit = $('#submit');
+var $filled = $('#job-filled');
 
 var jobAPI = {
   newJob: function(jobs) {
@@ -22,7 +23,7 @@ var jobAPI = {
       console.log('Pulled');
     });
   },
-  jobFilled: function(id) {
+  jobUpdate: function(id) {
     return $.ajax({
       type: 'UPDATE',
       url: 'api/jobs' + id
@@ -30,7 +31,7 @@ var jobAPI = {
       console.log('Updated');
     });
   },
-  jobCompleted: function(id) {
+  jobFilled: function(id) {
     return $.ajax({
       type: 'DELETE',
       url: 'api/jobs' + id
@@ -40,14 +41,14 @@ var jobAPI = {
   }
 }
 
-$addJob.click(function(event) {
+$submit.click(function(event) {
   event.preventDefault();
 
   var jobs = {
     full_name: $fullName.val().trim(),
     job_name: $jobName.val().trim(),
     job_description: $jobDescription.val().trim(),
-    emailAddress: $emailAddress.val().trim() 
+    emailAddress: $email.val().trim() 
   }
 
   console.log(jobs);
@@ -55,4 +56,14 @@ $addJob.click(function(event) {
   jobAPI.newJob(jobs).then(function() {
     console.log('Successfully added');
   });    
-})
+});
+
+$filled.click(function(event) {
+  event.preventDefault();
+
+  var deletedJob = $(this).parent().attr('data-id');
+
+  jobAPI.jobFilled(deletedJob).then(function() {
+    console.log('Job removed');
+  });
+});
