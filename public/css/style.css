@@ -4,7 +4,7 @@ body, html {
   }
  /* hero banner buttons and header text */
  
- #navbar-brand {
+ /* #navbar-brand {
    color: green;
 font-family: Oswald, cursive;
    font-size: 25px;
@@ -12,8 +12,8 @@ font-family: Oswald, cursive;
     text-transform: uppercase;
       padding-bottom: 2rem;
       text-shadow: 0 0 6px grey; /* horizontal-offset vertical-offset 'blur' colour */
-    -moz-text-shadow: 0 0 6px white;
-    -webkit-text-shadow: 0 0 6px white;
+    /* -moz-text-shadow: 0 0 6px white;
+    -webkit-text-shadow: 0 0 6px white; */ */
     
 
  }
@@ -22,7 +22,33 @@ font-family: Oswald, cursive;
 	max-width: 100%;
 	position: absolute;
 	top: 40%;
-	z-index: 1;
+	z-index: 1;<div class="afterNavbar">
+  <div class="container" id="categories">
+      <small>
+
+          <div class="row">
+              <div class="col">
+                  Web Dev
+              </div>
+              <div class="col">
+                  Design
+              </div>
+              <div class="col">
+                  Writing
+              </div>
+              <div class="col">
+                  Customer Service
+              </div>
+              <div class="col">
+                  Marketing
+              </div>
+              <div class="col">
+                  See All Categories
+              </div>
+          </div>
+  </div>
+  </small>
+</div>
 }
 .caption h3 {
 	color: black;
@@ -202,4 +228,54 @@ XL is above 1200px;
 .img-fluid{
     max-width: 100%;
     height: auto; 
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+.containerJP {
+  height: 100%;
+  width: auto;
+}
+.air-card{
+  height: 100%;
+  width: auto;
+}
+}
+ 
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .containerJP {
+    height: 100%;
+    width: auto;
+  }
+  .air-card{
+    height: 100%;
+    width: auto;
+  }
+  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .containerJP {
+    height: 100%;
+    width: auto;
+  }
+  .air-card{
+    height: 100%;
+    width: auto;
+  }
+  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+.containerJP {
+  height: 100%;
+  width: auto;
+}
+.air-card{
+  height: 100%;
+  width: auto;
+}
 }
