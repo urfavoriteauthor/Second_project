@@ -55,4 +55,4 @@ $submit.click(function(event) {
   jobAPI.newJob(jobs).then(function() {
     console.log('Successfully added');
   });    
-})
+});

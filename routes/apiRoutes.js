@@ -8,7 +8,12 @@ module.exports = function(app) {
   });
 
   app.post('/api/jobs', function(req, res) {
-    db.Jobs.create(req.body).then(function(dbJobs) {
+    db.Jobs.create({
+      full_name: req.body.full_name,
+      job_name: req.body.job_name,
+      job_description: req.body.job_description,
+      emailAddress: req.body.emailAddress
+    }).then(function(dbJobs) {
       res.json(dbJobs);
     });
   });
