@@ -7,33 +7,26 @@ var $filled = $('#job-filled');
 
 var jobAPI = {
   newJob: function(jobs) {
-    return $.ajax({
-      type: 'POST',
+    console.log(jobs)
+    $.ajax({
+      method: 'POST',
       url: 'api/jobs',
-      data: JSON.stringify(jobs)
+      data: jobs
     }).then(function(){
       console.log('Added');
     });
   },
   pullJobs: function() {
-    return $.ajax({
-      type: 'GET',
+    $.ajax({
+      method: 'GET',
       url: 'api/jobs'
     }).then(function(){
       console.log('Pulled');
     });
   },
-  jobUpdate: function(id) {
-    return $.ajax({
-      type: 'UPDATE',
-      url: 'api/jobs' + id
-    }).then(function() {
-      console.log('Updated');
-    });
-  },
   jobFilled: function(id) {
-    return $.ajax({
-      type: 'DELETE',
+    $.ajax({
+      method: 'DELETE',
       url: 'api/jobs' + id
     }).then(function() {
       console.log('Deleted');
@@ -41,7 +34,7 @@ var jobAPI = {
   }
 }
 
-$submit.click(function(event) {
+$submit.on('click', function(event) {
   event.preventDefault();
 
   var jobs = {
@@ -49,14 +42,16 @@ $submit.click(function(event) {
     job_name: $jobName.val().trim(),
     job_description: $jobDescription.val().trim(),
     emailAddress: $email.val().trim() 
-  }
+  };
+
+  jobAPI.newJob(jobs);
 
   console.log(jobs);
-
-  jobAPI.newJob(jobs).then(function() {
-    console.log('Successfully added');
-  });    
 });
+
+var displayAllJobs = function(jobs) {
+  var $addJob = $('<li>');
+}
 
 $filled.click(function(event) {
   event.preventDefault();
