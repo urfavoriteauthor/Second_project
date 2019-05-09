@@ -21,7 +21,11 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "mysql2": "^1.6.5",
+<<<<<<< HEAD
+    "sequelize": "^5.8.5"
+=======
     "path": "^0.12.7",
     "sequelize": "^5.8.0"
+>>>>>>> 4ad6e9ff7e5da0219a00b671e716d7d9353bd90a
   }
 }
