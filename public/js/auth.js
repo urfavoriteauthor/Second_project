@@ -1,5 +1,7 @@
+
+
 var firebaseConfig = {
-    apiKey: "AIzaSyBvGIfOnVpnpqWsTh1GKZEj9lkUPdR9bMc",
+    apiKey: process.env.apiKey,
     authDomain: "freelance-a-lot-978be.firebaseapp.com",
     databaseURL: "https://freelance-a-lot-978be.firebaseio.com",
     projectId: "freelance-a-lot-978be",
