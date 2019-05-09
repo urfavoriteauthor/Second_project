@@ -8,6 +8,7 @@ module.exports = function(app) {
   });
 
   app.post('/api/jobs', function(req, res) {
+    console.log(req.body);
     db.Jobs.create({
       full_name: req.body.full_name,
       job_name: req.body.job_name,
