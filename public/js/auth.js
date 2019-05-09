@@ -14,6 +14,7 @@ firebase.initializeApp(firebaseConfig);
 
 //   mak auth and firestore refrences
 
+
 var loginEmail = document.getElementById("loginEmail");
 var loginPassword = document.getElementById("loginPassword");
 var signUpEmail = document.getElementById("signUpEmail");
