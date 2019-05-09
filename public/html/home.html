@@ -67,8 +67,9 @@
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                        <div id="welcomeText" style="font-size:36px"></div>
                     </form>
                 </div>
         </nav>
@@ -92,6 +93,7 @@
                             <div class="form-group">
                                 <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp"
                                     placeholder="Email">
+                                    <br>
                                 <input type="password" class="form-control" id="loginPassword"
                                     aria-describedby="password" placeholder="Password">
                             </div>
@@ -110,8 +112,12 @@
                     <div class="modal-body" id="modalBody">
                         <form>
                             <div class="form-group">
+                                <input type="text" class="form-control" id="signUpName" aria-describedby="name"
+                                    placeholder="name">
+                                    <br>
                                 <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp"
-                                    placeholder="Username or Email">
+                                    placeholder="Email">
+                                    <br>
                                 <input type="password" class="form-control" id="signUpPassword"
                                     aria-describedby="Password" placeholder="Password">
                             </div>
@@ -207,7 +213,7 @@
     <!-- Banner -->
     <div container>
         <div class="text-center">
-            <img src="/assets/images/banner copy.png" class="img-fluid" alt="Responsive image">
+            <img src="../../assets/images/banner copy.png" class="img-fluid" alt="Responsive image">
 
         </div>
         <div class="caption center-block text-left">
@@ -384,7 +390,7 @@
                     <br>
                     <hr>
                     <div class="media position-relative">
-                        <img src="..." class="mr-3" alt="...">
+                        <img src="../../assets/images/" class="mr-3" alt="...">
                         <div class="media-body">
                             <h5 class="mt-0">Annabella W. </h5>
                             <p class="text-muted">I'm a creative developer who can take your project idea from scratch
@@ -621,20 +627,20 @@
                     <div class="col">
                         <form>
                             <div class="form-group">
-                                <label for="firstName">First Name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                                <label for="firstName">Name</label>
+                                <input type="text" class="form-control" id="mainName" placeholder="Name">
                             </div>
                             <div class="form-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                <label for="lastName">Email</label>
+                                <input type="text" class="form-control" id="mainEmail" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <label for="email">Work Email Address</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                    placeholder="Work Email Address">
+                                <label for="email">Password</label>
+                                <input type="password" class="form-control" id="mainPassword" aria-describedby="emailHelp"
+                                    placeholder="Password">
                             </div>
                             <div>
-                                <button type="button" class="btn btn-outline-success">
+                                <button type="submit" id="mainSubmit" class="btn btn-outline-success">
                                     Sign Up Now
                                 </button>
 
