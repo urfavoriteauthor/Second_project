@@ -1,6 +1,7 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
+var logger = require("morgan");
 
 var db = require("./models");
 
@@ -12,6 +13,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
+// new technology requirement - Morgan package to log requests
+app.use(logger("dev"));
 // Handlebars
 app.engine(
   "handlebars",
