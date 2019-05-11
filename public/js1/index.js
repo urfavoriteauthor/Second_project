@@ -22,6 +22,14 @@ var jobAPI = {
       url: 'api/jobs'
     }).then(function(){
       console.log('Pulled');
+
+      // var $addJob = $('<li>');
+      // $addJob.addClass("newPost");
+
+      // $addJob.append("<h2>" + jobs.job_name + "</h2>");
+      // $addJob.append("<p>" + jobs.job_description + "</p>");
+
+      // $("#job-postings").prepend($addJob);
     });
   },
   jobFilled: function(id) {
@@ -52,10 +60,39 @@ $submit.on('click', function(event) {
   $jobName.val('');
   $jobDescription.val('');
   $email.val('');
+
+  window.location.replace("./html/jobspage.html");
 });
 
-var displayAllJobs = function(jobs) {
-  var $addJob = $('<li>');
+// var displayAllJobs = function(jobs) {
+//   var $addJob = $('<li>');
+//   $addJob.addClass("newPost");
+
+//   $addJob.append("<h2>" + jobs.job_name + "</h2>");
+//   $addJob.append("<p>" + jobs.job_description + "</p>");
+
+//   $("#job-postings").prepend($addJob);
+// }
+
+if (window.location.pathname === '../html/jobspage.html') {
+  function pullJobs() {
+    $.ajax({
+      method: 'GET',
+      url: '/jobs'
+    }).then(function(){
+      console.log('Pulled');
+
+      var $addJob = $('<li>');
+      $addJob.addClass("newPost");
+
+      $addJob.appendChild("<h2>" + jobs.job_name + "</h2>");
+      $addJob.appendChild("<p>" + jobs.job_description + "</p>");
+
+      $("#jobs").prependChild($addJob);
+    });
+  };
+  
+  pullJobs();
 }
 
 $filled.click(function(event) {
