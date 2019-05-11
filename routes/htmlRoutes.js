@@ -7,7 +7,9 @@ module.exports = function(app) {
   });
 
   app.get('/jobs', function(req, res) {
-    res.sendFile(path.join(__dirname, '../public/html/jobspage.html'));
+    db.Jobs.findAll({}).then(function(dbJobs){
+      res.sendFile(path.join(__dirname, '../public/html/jobspage.html'));
+    });
   });
 
   app.get('*', function(req, res) {
