@@ -46,9 +46,12 @@ $submit.on('click', function(event) {
 
   jobAPI.newJob(jobs);
 
-  
-
   console.log(jobs);
+
+  $fullName.val('');
+  $jobName.val('');
+  $jobDescription.val('');
+  $email.val('');
 });
 
 var displayAllJobs = function(jobs) {
