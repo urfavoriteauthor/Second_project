@@ -36,9 +36,10 @@ body, html {
 
  /*----Jumbotron start ---------*/
  .jumbotron{
-  background-image: url(../assets/images/banner\ copy.png);
+  background-image: url(../assets/images/banner3.png);
   background-size: cover;
   background-repeat: no-repeat;
+  
  }
  /*----Jumbotron end ---------*/
 
