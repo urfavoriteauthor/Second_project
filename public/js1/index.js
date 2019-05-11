@@ -46,6 +46,8 @@ $submit.on('click', function(event) {
 
   jobAPI.newJob(jobs);
 
+  
+
   console.log(jobs);
 });
 
