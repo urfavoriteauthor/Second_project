@@ -23,15 +23,15 @@ var jobAPI = {
     }).then(function(){
       console.log('Pulled');
 
-      if (window.location.pathname === './html/jobspage.html'){
-        var $addJob = $('<li>');
-        $addJob.addClass("newPost");
+      // if (window.location.pathname === './html/jobspage.html'){
+      //   var $addJob = $('<li>');
+      //   $addJob.addClass("newPost");
 
-        $addJob.append("<h2>" + jobs.job_name + "</h2>");
-        $addJob.append("<p>" + jobs.job_description + "</p>");
+      //   $addJob.append("<h2>" + jobs.job_name + "</h2>");
+      //   $addJob.append("<p>" + jobs.job_description + "</p>");
 
-        $("#job-postings").prepend($addJob);
-      }
+      //   $("#job-postings").prepend($addJob);
+      // }
     });
   },
   jobFilled: function(id) {
