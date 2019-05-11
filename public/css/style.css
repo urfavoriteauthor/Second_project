@@ -1,55 +1,6 @@
 body, html {
     height: 100%;
   }
-<<<<<<< HEAD
- /* hero banner buttons and header text */
- 
- /#navbar-brand {
-   color: green;
-font-family: Oswald, cursive;
-   font-size: 25px;
-    text-shadow: -1px grey, 0 1px grey, 1px 0 grey, 0 -1px white;
-    text-transform: uppercase;
-      padding-bottom: 2rem;
-      text-shadow: 0 0 6px grey; /* horizontal-offset vertical-offset 'blur' colour */
-    /* -moz-text-shadow: 0 0 6px white;
-    -webkit-text-shadow: 0 0 6px white; */ */
-    
-
- }
- .caption {
-	width: 100%;
-	max-width: 100%;
-	position: absolute;
-	top: 40%;
-	z-index: 1;<div class="afterNavbar">
-  <div class="container" id="categories">
-      <small>
-
-          <div class="row">
-              <div class="col">
-                  Web Dev
-              </div>
-              <div class="col">
-                  Design
-              </div>
-              <div class="col">
-                  Writing
-              </div>
-              <div class="col">
-                  Customer Service
-              </div>
-              <div class="col">
-                  Marketing
-              </div>
-              <div class="col">
-                  See All Categories
-              </div>
-          </div>
-  </div>
-  </small>
-</div>
-=======
  /* HERO BANNER AND TEXT */
 
 .caption {
@@ -58,7 +9,6 @@ font-family: Oswald, cursive;
  position: absolute;
  top: 40%;
  z-index: 1;
->>>>>>> 3199373fc36002180ca122f31479f5b7af8644f5
 }
 .caption h3 {
 	color: black;
@@ -83,6 +33,15 @@ font-family: Oswald, cursive;
     -moz-text-shadow: 0 0 6px white;
     -webkit-text-shadow: 0 0 6px white;
  }
+
+ /*----Jumbotron start ---------*/
+ .jumbotron{
+  background-image: url(../assets/images/banner\ copy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ /*----Jumbotron end ---------*/
+
   /* align text in a form */
   form
   {
