@@ -23,8 +23,8 @@
     "express-handlebars": "^3.0.2",
     "i": "^0.3.6",
     "mysql2": "^1.6.5",
-    "sequelize": "^5.8.5"
-    "path": "^0.12.7",
+    "sequelize": "^5.8.5",
+    "path": "^0.12.7"
   }
 }
 
