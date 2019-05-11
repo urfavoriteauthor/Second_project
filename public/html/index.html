@@ -7,7 +7,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<link rel="stylesheet" href="../css/animate.css">
     <link rel="shortcut icon" href="../assets/images/icon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -27,7 +27,7 @@
     <header>
         <!-- Navbar -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top animated fadeIn delay-1s">
             <div class="container">
                 <div id="navbar-brand" style="padding-bottom: 5px" href="#">Freelance-a-Lot</div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -60,8 +60,6 @@
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
                         <div id="welcomeText" style="font-size:36px"></div>
                     </form>
                 </div>
@@ -89,6 +87,7 @@
                             </div>
                             <button id="loginSubmit" type="submit" class="btn btn-primary">Log-In</button>
                             <button id="logout" type="submit" class="btn btn-primary" style="display:none">Log-out</button>
+                            <div id="loginState" style="color:blue"></div>
                         </form>
                     </div>
 
@@ -161,7 +160,7 @@
     <div container>
 
         <!--- Hero Header Image -->
-        <div class="text-center">
+        <div class="text-center animated fadeIn delay-3s">
             <img src="../assets/images/banner3.png" class="img-fluid" alt="Responsive image">
             
             
@@ -176,7 +175,7 @@
 
 
         <!-- Clients -->
-        <div class="clients">
+        <div class="clients animated fadeIn delay-4s">
             <div class="container" id="categories">
 
                 <div class="row">
