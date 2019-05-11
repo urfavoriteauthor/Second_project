@@ -1,7 +1,7 @@
 
-
 var firebaseConfig = {
-    apiKey: process.env.apiKey,
+   
+    apiKey: "AIzaSyBvGIfOnVpnpqWsTh1GKZEj9lkUPdR9bMc",
     authDomain: "freelance-a-lot-978be.firebaseapp.com",
     databaseURL: "https://freelance-a-lot-978be.firebaseio.com",
     projectId: "freelance-a-lot-978be",
@@ -24,10 +24,8 @@ var logoutBtn = document.getElementById("logout");
 var signUpSubmit = document.getElementById("signUpSubmit");
 const auth = firebase.auth();
 const db = firebase.firestore();
-// auth.signInWithEmailAndPassword(firstName, lastName, email);
 
 auth.onAuthStateChanged(firebaseUser => {});
-// var signUp = document.querySelector("SignUp");
 
 // SubmitButton #1
 
@@ -44,13 +42,12 @@ signUpSubmit.addEventListener("click", function (event) {
     const promise = auth.createUserWithEmailAndPassword(email, password);
     promise.catch(e => console.log(e.message));
     console.log(email, password);
-    console.log("Thanks for Signing up!");
-    // var text = document.createTextNode('Welcome ' + name.value)
-    // var welcome = document.getElementById("welcomeText").appendChild(text)
+    console.log("Thanks for Signing up! " + signUpName.value);
     email = " ";
     password = " ";
     name = " ";
-// LoginButton
+    
+    // LoginButton
 })
 
 // submitButton #2
@@ -67,13 +64,11 @@ mainSubmit.addEventListener("click", function (event) {
     const promise = auth.createUserWithEmailAndPassword(email, password);
     promise.catch(e => console.log(e.message));
     console.log(email, password);
-    console.log("Thanks for Signing up!");
-    // var text = document.createTextNode('Welcome ' + name.value)
-    // var welcome = document.getElementById("welcomeText").appendChild(text)
+    console.log("Thanks for Signing up! " +mainName.value);
     email = " ";
     password = " ";
     name = " ";
-// LoginButton
+    // LoginButton
 })
 loginSubmit.addEventListener("click", function (event) {
     event.preventDefault();
@@ -91,12 +86,11 @@ loginSubmit.addEventListener("click", function (event) {
     promise.catch(e => console.log(e.message));
     document.getElementById("loginEmail").value = ""
     document.getElementById("loginPassword").value = ""
-    var welcome = document.getElementById("welcomeText").textContent = "Welcome" + name;
-    // document.getElementsByClassName("modal").style.display ="none"
+    var welcome = document.getElementById("welcomeText").textContent = "Welcome" + name.value;
+
     console.log(welcome);
     email = " ";
     password = " ";
-    var authData = [auth.signInWithEmailAndPassword(email, password)];
 })
 
 logoutBtn.addEventListener("click", function () {
@@ -109,14 +103,18 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     if (firebaseUser) {
         console.log(firebaseUser);
         logoutBtn.style.display = "inline";
+        loginSubmit.style.display = "none";
+        
         var signUpName = document.getElementById("signUpName");
         var name = signUpName.value;
-        var mainName = mainName.value;
-        var welcome = document.getElementById("welcomeText").textContent = "Welcome " + name;
-
+        var welcome = document.getElementById("welcomeText").textContent = "Welcome " + signUpName.value;
+       var loginState = document.getElementById("loginState").textContent = "Success";
         var signUpSubmit = document.getElementById("signUpSubmit");
     } else {
         console.log("Not Logged in");
-        logoutBtn.style.display = "none"
+        logoutBtn.style.display = "none";
+        loginSubmit.style.display = "inline";
+        var loginState = document.getElementById("loginState").textContent = "Not Logged in";
+
     }
 })

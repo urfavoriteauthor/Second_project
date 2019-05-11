@@ -33,6 +33,15 @@ body, html {
     -moz-text-shadow: 0 0 6px white;
     -webkit-text-shadow: 0 0 6px white;
  }
+
+ /*----Jumbotron start ---------*/
+ .jumbotron{
+  background-image: url(../assets/images/banner\ copy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ /*----Jumbotron end ---------*/
+
   /* align text in a form */
   form
   {
@@ -196,4 +205,54 @@ XL is above 1200px;
 .img-fluid{
     max-width: 100%;
     height: auto; 
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+.containerJP {
+  height: 100%;
+  width: auto;
+}
+.air-card{
+  height: 100%;
+  width: auto;
+}
+}
+ 
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .containerJP {
+    height: 100%;
+    width: auto;
+  }
+  .air-card{
+    height: 100%;
+    width: auto;
+  }
+  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .containerJP {
+    height: 100%;
+    width: auto;
+  }
+  .air-card{
+    height: 100%;
+    width: auto;
+  }
+  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+.containerJP {
+  height: 100%;
+  width: auto;
+}
+.air-card{
+  height: 100%;
+  width: auto;
+}
 }
